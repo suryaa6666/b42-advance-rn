@@ -1,1 +1,1 @@
-# Stack Navigation
+# Bottom Tabs Navigation

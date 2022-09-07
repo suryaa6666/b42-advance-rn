@@ -5,6 +5,7 @@ import { Text, Box, Pressable } from "native-base";
 export default function Hello({ navigation }) {
   return (
     <Box
+      safeArea
       bg="primary.400"
       flex={1}
       alignItems="center"

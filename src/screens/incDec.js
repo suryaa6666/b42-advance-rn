@@ -1,8 +1,7 @@
-import { StatusBar } from "expo-status-bar";
+// import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { TouchableOpacity } from "react-native";
 import { Text, Box } from "native-base";
-import { backgroundColor, height } from "styled-system";
 
 export default function incDec() {
   // Init State
@@ -20,6 +19,7 @@ export default function incDec() {
 
   return (
     <Box
+      safeArea
       bg="primary.400"
       flex={1}
       alignItems="center"
@@ -27,7 +27,6 @@ export default function incDec() {
       w="100%"
       p={10}
     >
-      <StatusBar />
       {/* Code Here */}
       <Text textAlign="center">
         If you click the add button it will increase by one, vice versa if you
