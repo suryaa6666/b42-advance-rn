@@ -1,1 +1,1 @@
-# Bottom Tabs Navigation
+# Passing Params To Route
