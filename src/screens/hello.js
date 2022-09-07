@@ -1,11 +1,10 @@
 import * as React from "react";
-import { Text, Box, Pressable } from "native-base";
+import { Text, Box } from "native-base";
+import { TouchableOpacity } from "react-native";
 
-// Add Props in Hello({navigation})
-export default function Hello({ navigation }) {
+export default function Hello() {
   return (
     <Box
-      safeArea
       bg="primary.400"
       flex={1}
       alignItems="center"
@@ -16,8 +15,8 @@ export default function Hello({ navigation }) {
         Life's too short
       </Text>
 
-      <Pressable
-        onPress={() => navigation.navigate("IncDec")}
+      <TouchableOpacity
+        onPress="#"
         style={{
           backgroundColor: "#487eb0",
           height: 40,
@@ -29,7 +28,7 @@ export default function Hello({ navigation }) {
         }}
       >
         <Text color={{ color: "white" }}>Screen Increment and Decrement</Text>
-      </Pressable>
+      </TouchableOpacity>
     </Box>
   );
 }
