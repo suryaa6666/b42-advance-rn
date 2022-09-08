@@ -7,5 +7,5 @@ import Hello from "./src/screens/hello";
 import IncDec from "./src/screens/incDec";
 
 export default function Container() {
-  return <Hello />;
+  return <IncDec />;
 }
