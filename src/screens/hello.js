@@ -16,7 +16,7 @@ export default function Hello({ navigation }) {
       </Text>
 
       <Pressable
-        onPress={() => navigation.navigate("IncDec")}
+        onPress={() => navigation.navigate("Main")}
         style={{
           backgroundColor: "#487eb0",
           height: 40,
