@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Text, Box } from "native-base";
+import { Text, Box, Image } from "native-base";
 
 // Declare route
-export default function DetailSoc({}) {
+export default function DetailSoc({ route }) {
   return (
     <Box
       safeArea
@@ -12,9 +12,9 @@ export default function DetailSoc({}) {
       justifyContent="center"
       p={10}
     >
-      <Text fontFamily="body" fontWeight={400} fontStyle="italic" fontSize={30}>
-        {/* Implement Params to get Data on previous screen  */}
-      </Text>
+      <Image alt={route.params.name} source={{ uri: route.params.image }} width={100} height={100} />
+      <Text>{route.params.name}</Text>
+      <Text>{route.params.age}</Text>
     </Box>
   );
 }
