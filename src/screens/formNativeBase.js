@@ -17,7 +17,7 @@ import {
   Divider,
 } from "native-base";
 
-export default function FormNativeBase() {
+export default function FormNativeBase({ navigation }) {
   return (
     <Box
       safeArea
@@ -60,7 +60,7 @@ export default function FormNativeBase() {
           </Link>
         </FormControl>
         <VStack space={2}>
-          <Button colorScheme="cyan" _text={{ color: "white" }}>
+          <Button colorScheme="cyan" _text={{ color: "white" }} onPress={() => navigation.navigate("Hello")}>
             Login
           </Button>
 
