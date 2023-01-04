@@ -11,24 +11,18 @@ import { ListItem, Avatar } from "react-native-elements";
 
 // Import Axios
 
-const PostDetail = (props) => {
-  //init Props
-
-  //Init State
-
-  // Create LifeCycle
-  //Function Exception
-
-  // Create Function to fetch
-
-  //   Create Component List
+const PostDetail = ({ route }) => {
+  console.log("isi route boi", route)
   return (
     <View style={style.container}>
       <Text h2 style={{ fontWeight: "bold" }}>
         This Is Post Detail
       </Text>
-      {/* Implement Axios Here */}
-      {/* Render Component List */}
+      <Text>{route.params.data.name}</Text>
+      <Text>{route.params.data.username}</Text>
+      <Text>{route.params.data.email}</Text>
+      <Text>{route.params.data.phone}</Text>
+      <Text>{route.params.data.website}</Text>
     </View>
   );
 };
